@@ -4,6 +4,8 @@ import pandas as pd
 from pandas.plotting import register_matplotlib_converters
 register_matplotlib_converters()
 
+import math
+
 import datetime as dt
 from datetime import timedelta, date
 from pandas.tseries.offsets import DateOffset
@@ -62,7 +64,7 @@ df['Time'][200] = "19:47:00"
 df_day = df.drop(['Time'], 1)
 df_day = df_day.groupby('Date').agg({'Grand total':'max', "Today's total":'sum'})
 df_day = df_day.rename_axis('Date').reset_index()
-# df_day.to_csv('..\\Challenge\\data_day.csv')
+# df_day.to_csv('..\\Challenge-2020-2021\\data_day.csv')
 
 def week_day(df):
     date = df['Date']
@@ -88,7 +90,7 @@ for i in range(1, df_day2021.shape[0]):
         df_day2021["Grand total"][0] = df_day2021["Today's total"][0]
 
 df_day = pd.concat([df_day2020, df_day2021], ignore_index = True)
-df_day.to_csv('..\\Challenge\\data_day.csv')
+# df_day.to_csv('..\\Challenge-2020-2021\\data_day.csv')
 
 df_day.plot(x = "Date", y = "Today's total", kind = "line")#, s = 0.25)
 df_day.plot(x = "Date", y = "Grand total", kind = "line")
@@ -236,18 +238,12 @@ df_future[["Today's total", 'Predicted_bikes']].plot()
 
 # %%
 
-day = df_future['Predicted_bikes'][df_future.index == '2021-04-02'][0]
-print('Predicted bikes on Friday, April 2nd: ', day)
+day_prediction = df_future['Predicted_bikes'][df_future.index == '2021-04-02'][0]
+day_prediction = math.ceil(day_prediction)
+print('Predicted bikes on Friday, April 2nd: ', day_prediction)
 
-# %% And what about between 0 and 9am ?
-
-new_df = df_raw.drop([0,1]).reset_index(drop = True)
-new_df = new_df.drop(['Unnamed: 4', 'Remarque'], 1)
-new_df = new_df.rename(columns = {"Heure / Time" : 'Time', 'Vélos depuis le 1er janvier / Grand total' : 'Grand total', "Vélos ce jour / Today's total" : "Today's total"})
-# new_df = new_df.drop(['Grand total', "Today's total"], 1)
-
-df_hour = pd.to_datetime(new_df['Date'] + ' ' + new_df['Time'])
-df_hour = pd.DataFrame(df_hour, columns = ['Date_hour'])
-df_hour = pd.concat([df_hour, new_df["Today's total"], new_df['Grand total'], new_df["Today's total"]], axis = 1)
+delta_prediction = day_prediction*0.218
+delta_prediction = math.ceil(delta_prediction)
+print('Predicted bikes on Friday, April 2nd between midnight and 9pm: ', delta_prediction)
 
 # %%
