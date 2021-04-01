@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5a00a20f44e84ddd8f8cb5d3e35ccd45 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5a00a20f44e84ddd8f8cb5d3e35ccd45" ></div>
+        
+</body>
+<script>    
+    
+            var map_5a00a20f44e84ddd8f8cb5d3e35ccd45 = L.map(
+                "map_5a00a20f44e84ddd8f8cb5d3e35ccd45",
+                {
+                    center: [43.60723700047601, 3.885405489957275],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8392572f5d224fb6ae2368046fecfea8 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5a00a20f44e84ddd8f8cb5d3e35ccd45);
+        
+    
+            var circle_marker_d8efaf96d93f445087e6b17d5ecd3b04 = L.circleMarker(
+                [43.60969924926758, 3.896939992904663],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 41.85, "stroke": true, "weight": 3}
+            ).addTo(map_5a00a20f44e84ddd8f8cb5d3e35ccd45);
+        
+    
+        var popup_e53708e038e54cce888bb5b286c3524e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf37d3a206bc464ba8943d60f0e1f426 = $(`<div id="html_cf37d3a206bc464ba8943d60f0e1f426" style="width: 100.0%; height: 100.0%;">Compteur Piéton/Vélo Berracasa: 837</div>`)[0];
+            popup_e53708e038e54cce888bb5b286c3524e.setContent(html_cf37d3a206bc464ba8943d60f0e1f426);
+        
+
+        circle_marker_d8efaf96d93f445087e6b17d5ecd3b04.bindPopup(popup_e53708e038e54cce888bb5b286c3524e)
+        ;
+
+        
+    
+    
+            var circle_marker_8fae220c535045a99f30e9a22a33b988 = L.circleMarker(
+                [43.5907, 3.81324],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.4, "stroke": true, "weight": 3}
+            ).addTo(map_5a00a20f44e84ddd8f8cb5d3e35ccd45);
+        
+    
+        var popup_7444889ffe0a46c7a456a3972e669009 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f237b06e8f7c46449033a2b7dc90ef71 = $(`<div id="html_f237b06e8f7c46449033a2b7dc90ef71" style="width: 100.0%; height: 100.0%;">Compteur Vélo Lavérune: 148</div>`)[0];
+            popup_7444889ffe0a46c7a456a3972e669009.setContent(html_f237b06e8f7c46449033a2b7dc90ef71);
+        
+
+        circle_marker_8fae220c535045a99f30e9a22a33b988.bindPopup(popup_7444889ffe0a46c7a456a3972e669009)
+        ;
+
+        
+    
+    
+            var circle_marker_20b1507dfebc4cedae4066187b12aba6 = L.circleMarker(
+                [43.61465, 3.8336],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.55, "stroke": true, "weight": 3}
+            ).addTo(map_5a00a20f44e84ddd8f8cb5d3e35ccd45);
+        
+    
+        var popup_4d8c749205534ec3a8601fa6a21d7bd1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_555f9d70da4d4709ab35f6f1f9085afc = $(`<div id="html_555f9d70da4d4709ab35f6f1f9085afc" style="width: 100.0%; height: 100.0%;">Compteur Vélo Lodève/Celleneuve: 511</div>`)[0];
+            popup_4d8c749205534ec3a8601fa6a21d7bd1.setContent(html_555f9d70da4d4709ab35f6f1f9085afc);
+        
+
+        circle_marker_20b1507dfebc4cedae4066187b12aba6.bindPopup(popup_4d8c749205534ec3a8601fa6a21d7bd1)
+        ;
+
+        
+    
+    
+            var circle_marker_f6793b93772a487eaa9a147d742cab21 = L.circleMarker(
+                [43.57926, 3.93327],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.55, "stroke": true, "weight": 3}
+            ).addTo(map_5a00a20f44e84ddd8f8cb5d3e35ccd45);
+        
+    
+        var popup_f07fb1015d0447aa9355cd8d02ace2dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67c4a5ffd8174dfdb36fe2432a96eac5 = $(`<div id="html_67c4a5ffd8174dfdb36fe2432a96eac5" style="width: 100.0%; height: 100.0%;">Compteur Vélo Lattes 2: 71</div>`)[0];
+            popup_f07fb1015d0447aa9355cd8d02ace2dd.setContent(html_67c4a5ffd8174dfdb36fe2432a96eac5);
+        
+
+        circle_marker_f6793b93772a487eaa9a147d742cab21.bindPopup(popup_f07fb1015d0447aa9355cd8d02ace2dd)
+        ;
+
+        
+    
+    
+            var circle_marker_f602248091a84b0ea82c54de3da2638f = L.circleMarker(
+                [43.57883, 3.93324],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a00a20f44e84ddd8f8cb5d3e35ccd45);
+        
+    
+        var popup_4fcd529503154c6d977b3e05e4e346e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a40b9a730aba40b08a208597ce94d44d = $(`<div id="html_a40b9a730aba40b08a208597ce94d44d" style="width: 100.0%; height: 100.0%;">Compteur Vélo Lattes 1: 280</div>`)[0];
+            popup_4fcd529503154c6d977b3e05e4e346e0.setContent(html_a40b9a730aba40b08a208597ce94d44d);
+        
+
+        circle_marker_f602248091a84b0ea82c54de3da2638f.bindPopup(popup_4fcd529503154c6d977b3e05e4e346e0)
+        ;
+
+        
+    
+    
+            var circle_marker_4f1e2d2146de4fcd91646bc2be95511a = L.circleMarker(
+                [43.6157418, 3.9096322],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 3}
+            ).addTo(map_5a00a20f44e84ddd8f8cb5d3e35ccd45);
+        
+    
+        var popup_26e0208311b54b18bbc9f735e1344277 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59e674fd87384cac93529114818afa77 = $(`<div id="html_59e674fd87384cac93529114818afa77" style="width: 100.0%; height: 100.0%;">Compteur Vélo Vieille Poste: 220</div>`)[0];
+            popup_26e0208311b54b18bbc9f735e1344277.setContent(html_59e674fd87384cac93529114818afa77);
+        
+
+        circle_marker_4f1e2d2146de4fcd91646bc2be95511a.bindPopup(popup_26e0208311b54b18bbc9f735e1344277)
+        ;
+
+        
+    
+    
+            var circle_marker_0d40caf932254f78a3d9b271f0eb88e4 = L.circleMarker(
+                [43.6138841, 3.8684671],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 53.5, "stroke": true, "weight": 3}
+            ).addTo(map_5a00a20f44e84ddd8f8cb5d3e35ccd45);
+        
+    
+        var popup_fcd660e03a464fb4b192aa5e8737623b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3e95d203de143efb710a7d10b7ae4bd = $(`<div id="html_a3e95d203de143efb710a7d10b7ae4bd" style="width: 100.0%; height: 100.0%;">Compteur Vélo Gerhardt: 1070</div>`)[0];
+            popup_fcd660e03a464fb4b192aa5e8737623b.setContent(html_a3e95d203de143efb710a7d10b7ae4bd);
+        
+
+        circle_marker_0d40caf932254f78a3d9b271f0eb88e4.bindPopup(popup_fcd660e03a464fb4b192aa5e8737623b)
+        ;
+
+        
+    
+    
+            var circle_marker_50f43865f148453b85e81d8483268ba5 = L.circleMarker(
+                [43.61620945549243, 3.874408006668091],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 57.65, "stroke": true, "weight": 3}
+            ).addTo(map_5a00a20f44e84ddd8f8cb5d3e35ccd45);
+        
+    
+        var popup_485673a48fe44d26a94a6df95d59f703 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_816f0e738f4e439f9365a774a048d782 = $(`<div id="html_816f0e738f4e439f9365a774a048d782" style="width: 100.0%; height: 100.0%;">Compteur Vélo Tanneurs: 1153</div>`)[0];
+            popup_485673a48fe44d26a94a6df95d59f703.setContent(html_816f0e738f4e439f9365a774a048d782);
+        
+
+        circle_marker_50f43865f148453b85e81d8483268ba5.bindPopup(popup_485673a48fe44d26a94a6df95d59f703)
+        ;
+
+        
+    
+    
+            var circle_marker_9a466a17905248f39c26ab89bc201c8a = L.circleMarker(
+                [43.6266977, 3.8956288],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.85, "stroke": true, "weight": 3}
+            ).addTo(map_5a00a20f44e84ddd8f8cb5d3e35ccd45);
+        
+    
+        var popup_323ceaec48d1415d8753959e2330cf2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0aa82b332b824435a7a433bda27c647f = $(`<div id="html_0aa82b332b824435a7a433bda27c647f" style="width: 100.0%; height: 100.0%;">Compteur Vélo Delmas 1: 537</div>`)[0];
+            popup_323ceaec48d1415d8753959e2330cf2c.setContent(html_0aa82b332b824435a7a433bda27c647f);
+        
+
+        circle_marker_9a466a17905248f39c26ab89bc201c8a.bindPopup(popup_323ceaec48d1415d8753959e2330cf2c)
+        ;
+
+        
+    
+    
+            var circle_marker_2280e44726e547a1a5c57bd850a4d6ae = L.circleMarker(
+                [43.6266977, 3.8956288],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.35, "stroke": true, "weight": 3}
+            ).addTo(map_5a00a20f44e84ddd8f8cb5d3e35ccd45);
+        
+    
+        var popup_8de4fef120e04d2e9694c09b0981d5e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7cce85afcfe5475cb30d3256cd697c18 = $(`<div id="html_7cce85afcfe5475cb30d3256cd697c18" style="width: 100.0%; height: 100.0%;">Compteur Vélo Delmas 2: 47</div>`)[0];
+            popup_8de4fef120e04d2e9694c09b0981d5e6.setContent(html_7cce85afcfe5475cb30d3256cd697c18);
+        
+
+        circle_marker_2280e44726e547a1a5c57bd850a4d6ae.bindPopup(popup_8de4fef120e04d2e9694c09b0981d5e6)
+        ;
+
+        
+    
+</script>
